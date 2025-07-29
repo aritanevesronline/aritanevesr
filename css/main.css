@@ -60,11 +60,11 @@ body {
 }
 
 .icon {
-    position: relative;
     display: inline-block;
     flex-direction: column;
     width: 7rem;
     height: auto;
+    text-align: center;
     justify-items: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -73,18 +73,19 @@ body {
     color: var(--white);
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
-    margin: 0.3rem 0 0 0;
-    /* Ensures the text is close to the image */
+    margin: 0 auto;
     font-size: 0.9rem;
 }
 
-.linkedin {
+.linkedin, .github {
     text-decoration: none;
 }
 
 .icon img {
     width: auto;
     height: 7rem;
+    margin: 0 auto;
+
 }
 
 .icon:hover {
