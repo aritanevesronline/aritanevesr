@@ -12,18 +12,18 @@ document.addEventListener('DOMContentLoaded', () => {
 function turnPT() {
     const pt = document.querySelectorAll('.pt');
     const eng = document.querySelectorAll('.eng');
-    const togglePT = document.querySelector('.toggle-pt');
-    const toggleENG = document.querySelector('.toggle-eng');
-    const formPT = document.querySelector('.pt-form');
-    const formENG = document.querySelector('.eng-form');
+    const togglePT = document.querySelectorAll('.toggle-pt');
+    const toggleENG = document.querySelectorAll('.toggle-eng');
+    const formPT = document.querySelectorAll('.pt-form');
+    const formENG = document.querySelectorAll('.eng-form');
 
     pt.forEach(el => el.style.display = 'block');
     eng.forEach(el => el.style.display = 'none');
 
-    togglePT.style.display = 'flex';
-    toggleENG.style.display = 'none';
-    formPT.style.display = 'flex';
-    formENG.style.display = 'none';
+    togglePT.forEach(el => el.style.display = 'flex');
+    toggleENG.forEach(el => el.style.display = 'none');
+    formPT.forEach(el => el.style.display = 'flex');
+    formENG.forEach(el => el.style.display = 'none');
 
     localStorage.setItem('language', 'pt');
 }
@@ -31,17 +31,18 @@ function turnPT() {
 function turnENG() {
     const pt = document.querySelectorAll('.pt');
     const eng = document.querySelectorAll('.eng');
-    const togglePT = document.querySelector('.toggle-pt');
-    const toggleENG = document.querySelector('.toggle-eng');
-    const formPT = document.querySelector('.pt-form');
-    const formENG = document.querySelector('.eng-form');
+    const togglePT = document.querySelectorAll('.toggle-pt');
+    const toggleENG = document.querySelectorAll('.toggle-eng');
+    const formPT = document.querySelectorAll('.pt-form');
+    const formENG = document.querySelectorAll('.eng-form');
 
     pt.forEach(el => el.style.display = 'none');
     eng.forEach(el => el.style.display = 'block');
-    togglePT.style.display = 'none';
-    toggleENG.style.display = 'flex';
-    formPT.style.display = 'none';
-    formENG.style.display = 'flex';
+
+    togglePT.forEach(el => el.style.display = 'none');
+    toggleENG.forEach(el => el.style.display = 'flex');
+    formPT.forEach(el => el.style.display = 'none');
+    formENG.forEach(el => el.style.display = 'flex');
 
     localStorage.setItem('language', 'eng');
 }
