@@ -2572,7 +2572,7 @@ a {
     }
 
     .content-box {
-        padding: 1rem;
+        padding: 1.5rem;
     }
 
     .project-profile-img img {
@@ -3140,5 +3140,6 @@ a {
     .skills {
         width: 5rem;
     }
+
 
 }
