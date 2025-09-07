@@ -665,7 +665,7 @@ a {
     }
 
     .member {
-        width: 5.7rem;
+        width: 7rem;
     }
 
     .boxes-mobile {
@@ -838,15 +838,23 @@ a {
     }
 
     .member {
-        width: 5rem;
+        width: 7rem;
+    }
+
+    .boxes-mobile {
+        width: 80%;
     }
 
     .third-box {
-        width: 80%;
-        margin: 0 0 0 2rem;
+        width: 100%;
+        margin: 0 0 0 0;
         background-color: transparent;
         box-shadow: transparent 0.2rem 0.2rem;
         padding: 1rem 0;
+    }
+
+    .box-content img {
+        width: 14rem;
     }
 
     .skills {
@@ -2747,3 +2755,4 @@ a {
 
 
 }
+
