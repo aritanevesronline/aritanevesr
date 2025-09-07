@@ -30,6 +30,8 @@ p {
 
 .container-mobile {
     display: none;
+    min-height: 100vh;
+    width: 100vw;
 }
 
 .pt,
@@ -811,7 +813,7 @@ a {
         display: none;
         width: 100%;
         padding: 5rem 0 2rem 0;
-        min-height: 100vh;
+        max-height: 100vh;
         background-color: var(--purple);
         flex-direction: column;
         justify-content: center;
@@ -1014,7 +1016,7 @@ a {
         display: none;
         width: 100%;
         padding: 5rem 0 2rem 0;
-        min-height: 100vh;
+        max-height: 100vh;
         background-color: var(--purple);
         flex-direction: column;
         justify-content: center;
@@ -1206,7 +1208,7 @@ a {
         display: none;
         width: 100%;
         padding: 5rem 0 2rem 0;
-        min-height: 100vh;
+        max-height: 100vh;
         background-color: var(--purple);
         flex-direction: column;
         justify-content: center;
@@ -1397,7 +1399,7 @@ a {
         display: none;
         width: 100%;
         padding: 5rem 0 2rem 0;
-        min-height: 100vh;
+        max-height: 100vh;
         background-color: var(--purple);
         flex-direction: column;
         justify-content: center;
@@ -1591,7 +1593,7 @@ a {
         display: none;
         width: 100%;
         padding: 5rem 0 2rem 0;
-        min-height: 100vh;
+        max-height: 100vh;
         background-color: var(--purple);
         flex-direction: column;
         justify-content: center;
@@ -1782,7 +1784,7 @@ a {
         display: none;
         width: 100%;
         padding: 5rem 0 2rem 0;
-        min-height: 100vh;
+        max-height: 100vh;
         background-color: var(--purple);
         flex-direction: column;
         justify-content: center;
@@ -1965,7 +1967,7 @@ a {
         display: none;
         width: 100%;
         padding: 5rem 0 2rem 0;
-        min-height: 100vh;
+        max-height: 100vh;
         background-color: var(--purple);
         flex-direction: column;
         justify-content: center;
@@ -2109,7 +2111,7 @@ a {
         display: none;
         width: 100%;
         padding: 5rem 0 2rem 0;
-        min-height: 100vh;
+        max-height: 100vh;
         background-color: var(--purple);
         flex-direction: column;
         justify-content: center;
@@ -2253,7 +2255,7 @@ a {
         display: none;
         width: 100%;
         padding: 5rem 0 2rem 0;
-        min-height: 100vh;
+        max-height: 100vh;
         background-color: var(--purple);
         flex-direction: column;
         justify-content: center;
@@ -2396,7 +2398,7 @@ a {
         display: none;
         width: 100%;
         padding: 5rem 0 2rem 0;
-        min-height: 100vh;
+        max-height: 100vh;
         background-color: var(--purple);
         flex-direction: column;
         justify-content: center;
