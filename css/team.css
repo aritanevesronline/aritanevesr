@@ -433,13 +433,13 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0;
-    padding: 1rem;
+    padding: 1rem 1rem 1rem 0;
     border-radius: 0.625rem;
     gap: 3rem;
 }
 
 .member {
-    width: 9rem;
+    width: 7rem;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -448,15 +448,15 @@ a {
 }
 
 .member img {
-    width: 7.9rem;
-    height: 7.9rem;
+    width: 100%;
+    height: auto;
     border-radius: 50%;
     box-shadow: var(--light-purple) 0.2rem 0.2rem;
 }
 
 .member h3 {
     color: var(--light-purple);
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin: 0;
     margin: 1rem 0 0 0;
     text-align: center;
@@ -489,6 +489,10 @@ a {
 .third-box h3 {
     color: var(--white);
     font-size: 16px;
+}
+
+.third-box p {
+    font-size: 0.8rem;
 }
 
 .box-content img {
@@ -653,14 +657,31 @@ a {
 
     .content {
         margin: 0 0 0 0.2rem;
+        width: 80%;
+    }
+
+    .content-box {
+        gap: 3rem 2rem;
+    }
+
+    .member {
+        width: 5.7rem;
+    }
+
+    .boxes-mobile {
+        width: 80%;
     }
 
     .third-box {
-        width: 80%;
-        margin: 0 0 0 2rem;
+        width: 100%;
+        margin: 0 0 0 0;
         background-color: transparent;
         box-shadow: transparent 0.2rem 0.2rem;
         padding: 1rem 0;
+    }
+
+    .box-content img {
+        width: 14rem;
     }
 
     .skills {
@@ -809,6 +830,15 @@ a {
 
     .content {
         margin: 0 0 0 0.2rem;
+        width: 80%;
+    }
+
+    .content-box {
+        gap: 3rem 2rem;
+    }
+
+    .member {
+        width: 5rem;
     }
 
     .third-box {
@@ -966,6 +996,15 @@ a {
 
     .content {
         margin: 0 0 0 1rem;
+        width: 80%;
+    }
+
+    .content-box {
+        gap: 3rem 2rem;
+    }
+
+    .member {
+        width: 6rem;
     }
 
     .third-box {
@@ -1122,6 +1161,19 @@ a {
 
     .content {
         margin: 0 0 0 1rem;
+    }
+
+    .content {
+        margin: 0 0 0 1rem;
+        width: 80%;
+    }
+
+    .content-box {
+        gap: 3rem 2rem;
+    }
+
+    .member {
+        width: 6rem;
     }
 
     .third-box {
@@ -1283,6 +1335,10 @@ a {
         margin: 0 0 0 2rem;
     }
 
+    .member {
+        width: 7rem;
+    }
+
     .third-box {
         width: 80%;
         margin: 0 0 0 4rem;
@@ -1429,6 +1485,10 @@ a {
 
     .content {
         margin: 0 0 0 2rem;
+    }
+
+    .member {
+        width: 7rem;
     }
 
     .third-box {
@@ -2684,5 +2744,6 @@ a {
     .box-content img {
         width: 16rem;
     }
+
 
 }
