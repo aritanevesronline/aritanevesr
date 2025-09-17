@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>aritanevesr</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/jpg" href="images/IconWindows.png" />
+
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <script src="/js/menu.js"></script>
+    <script src="/js/language-toggle.js" defer></script>
+    <script src="/script/bars.js"></script>
+    <script src="/script/buttons.js"></script>
+    <script src="/script/menu.js"></script>
+    <script src="/script/language-toggle.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <!--NAVBAR-->
+        <div class="navbar">
+            <div class="navbar-inside">
+                <a href="#" class="logo">RITA NEVES</a>
+                <div class="menu-nav">
+                    <a href="#about" class="pt">Sobre Mim</a>
+                    <a href="#about" class="eng">About Me</a>
+                    <a href="#projects" class="pt">Portfólio</a>
+                    <a href="#projects" class="eng">Portfolio</a>
+                    <button class="toggle-pt" onclick="turnENG()">PT</button>
+                    <button class="toggle-eng" onclick="turnPT()">EN</button>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-mobile">
+            <div class="navbar-inside">
+                <a href="#" class="logo">RITA NEVES</a>
+                <button class="on-button" onclick="showMenu()"><i class="bi bi-list"></i></button>
+                <button class="off-button" onclick="hideMenu()">
+                    <i class="bi bi-x"></i>
+                </button>
+            </div>
+        </div>
+
+        <!--MOBILE MENU-->
+        <div class="mobile-menu">
+            <a href="#about" class="pt">Sobre Mim</a>
+            <a href="#about" class="eng">About Me</a>
+            <a href="#projects" class="pt">Portfolio</a>
+            <a href="#projects" class="eng">Portfolio</a>
+            <button class="toggle-pt" onclick="turnENG()">PT</button>
+            <button class="toggle-eng" onclick="turnPT()">EN</button>
+        </div>
+        <!--BANNER-->
+        <div class="banner">
+            <div class="photo">
+                <img src="/images/pfp.png">
+            </div>
+            <div class="text">
+                <h1 class="pt">Olá<span class="exclamation">!</span></h1>
+                <h1 class="eng">Hello<span class="exclamation">!</span></h1>
+                <h3 class="pt">Eu sou uma Designer!</h3>
+                <h3 class="eng">I am a Designer!</h3>
+                <br>
+                <br>
+                <p class="pt">Chamo-me Ana Rodrigues, tenho 23 anos e sou licenciada em Comunicação e Design Gráfico.
+                </p>
+                <p class="pt">Com sensibilidade estética e domínio das ferramentas Adobe, destaco-me na criação de
+                    identidades visuais e design impactante. Tenho experiência em projetos colaborativos e,
+                    recentemente, comecei a explorar o desenvolvimento front-end, com o objetivo de transformar ideias
+                    visuais em experiências digitais interativas.</p>
+
+                <p class="eng">My name is Ana Rodrigues, I’m 23 and hold a degree in Communication and Graphic Design.
+                </p>
+                <p class="eng">With a strong eye for aesthetics and solid skills in Adobe tools, I specialise in
+                    creating
+                    striking
+                    visual identities and impactful design. I have experience in collaborative projects and have
+                    recently begun exploring front-end development, aiming to turn visual ideas into interactive
+                    digital
+                    experiences.</p>
+                <br>
+                <div class="banner-buttons">
+                    <a href="/images/cv/english.pdf" target="_blank" class="pt">Baixar Currículo →</a>
+                    <a href="#form" class="pt">Contacta-me! →</a>
+                    <a href="/images/cv/english.pdf" target="_blank" class="eng">Download CV →</a>
+                    <a href="#form" class="eng">Contact Me →</a>
+                </div>
+            </div>
+        </div>
+
+        <!--Skills-->
+        <div class="skills-tab" id="skills-tab">
+            <div class="load-box">
+                <div class="skills">
+                    <div class="progress-circle" data-progress="65">
+                        <div class="inner-circle">
+                            <span class="iconify" data-icon="simple-icons:adobeillustrator"></span>
+                            <span class="percentage">0%</span>
+                        </div>
+                    </div>
+                    <p>Illustrator</p>
+                </div>
+
+                <div class="skills">
+                    <div class="progress-circle" data-progress="55">
+                        <div class="inner-circle">
+                            <span class="iconify" data-icon="simple-icons:adobeaftereffects"></span>
+                            <span class="percentage">0%</span>
+                        </div>
+                    </div>
+                    <p>After Effects</p>
+                </div>
+
+
+                <div class="skills">
+                    <div class="progress-circle" data-progress="65">
+                        <div class="inner-circle">
+                            <span class="iconify" data-icon="simple-icons:figma"></span>
+                            <span class="percentage">0%</span>
+                        </div>
+                    </div>
+                    <p>Figma </p>
+                </div>
+
+                <div class="skills">
+                    <div class="progress-circle" data-progress="75">
+                        <div class="inner-circle">
+                            <span class="iconify" data-icon="simple-icons:html5"></span>
+                            <span class="percentage">0%</span>
+                        </div>
+                    </div>
+                    <p>HTML</p>
+                </div>
+
+                <div class="skills">
+                    <div class="progress-circle" data-progress="60">
+                        <div class="inner-circle">
+                            <span class="iconify" data-icon="simple-icons:css3"></span>
+                            <span class="percentage">0%</span>
+                        </div>
+                    </div>
+                    <p>CSS</p>
+                </div>
+
+                <div class="skills">
+                    <div class="progress-circle" data-progress="30">
+                        <div class="inner-circle">
+                            <span class="iconify" data-icon="simple-icons:javascript"></span>
+                            <span class="percentage">0%</span>
+                        </div>
+                    </div>
+                    <p>JavaScript</p>
+                </div>
+            </div>
+        </div>
+
+        <!--About-->
+        <div class="about" id="about">
+            <div class="about-1">
+                <div class="about-1-1">
+                    <div class="about-1-1-1">
+                        <div class="about-tab">
+                            <h2 class="pt">Previous Activities</h2>
+                            <h2 class="eng">Previous Activities</h2>
+                            <br>
+                            <div class="line">
+                                <div class="line-item">
+                                    <h3 class="pt">1-2 Anos</h3>
+                                    <p class="pt">Patinagem Artística</p>
+                                    <h3 class="eng">1-2 Years</h3>
+                                    <p class="eng">Figure Skating</p>
+                                </div>
+                                <br>
+                                <div class="line-item">
+                                    <h3 class="pt">3 Anos</h3>
+                                    <p class="pt">Natação</p>
+                                    <h3 class="eng">3 Years</h3>
+                                    <p class="eng">Swimming</p>
+                                </div>
+                                <br>
+                                <div class="line-item">
+                                    <h3 class="pt">2 Anos</h3>
+                                    <p class="pt">Criadora de Conteúdo para um Canal de Youtube Pessoal</p>
+                                    <h3 class="eng">2 Years</h3>
+                                    <p class="eng">Content Creator for Personal YouTube Channel</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-1-1-2">
+                        <div class="about-tab">
+                            <h2 class="pt">EDUCAÇÃO</h2>
+                            <h2 class="eng">EDUCATION</h2>
+                            <br>
+                            <div class="line">
+                                <div class="line-item">
+                                    <h3 class="pt">2021-2024</h3>
+                                    <p class="pt">Licenciatura em Comunicação e Design Multimédia, na Escola Superior de
+                                        Educação de Coimbra</p>
+                                    <h3 class="eng">2021-2024</h3>
+                                    <p class="eng">Bachelor’s Degree in Communication and Multimedia Design, at Escola
+                                        Superior de Educação de Coimbra</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-1-2">
+                    <div class="about-tab">
+                        <h2 class="pt">EXPERIÊNCIA DE TRABALHO</h2>
+                        <h2 class="eng">WORK EXPERIENCE</h2>
+                        <br>
+                        <div class="line">
+                            <div class="line-item">
+                                <h3 class="pt">2024-2025 (6 meses)</h3>
+                                <p class="pt">Ajudante de Retalho no Supermercado Covira, Praia de Mira</p>
+                                <h3 class="eng">2024-2025 (6 months)</h3>
+                                <p class="eng">Retail Associate at Continente Supermarket, Fórum Coimbra</p>
+                            </div>
+                            <br>
+                            <div class="line-item">
+                                <h3 class="pt">2024 (3 meses)</h3>
+                                <p class="pt">Estágiaria de Design na empresa GrupoPIE Portugal, Póvoa de Varzim/p>
+                                <h3 class="eng">2024 (3 months)</h3>
+                                <p class="eng">Design Intern at GrupoPIE Portugal, Póvoa de Varzim</p>
+                            </div>
+                            <br>
+                            <div class="line-item">
+                                <h3 class="pt">Verão 2021-2023</h3>
+                                <p class="pt">Ajudante de Retalho no Supermercado Coviran, Praia de Mira</p>
+                                <h3 class="eng">Summer 2021-2023</h3>
+                                <p class="eng">Retail Assistant at Coviran Supermarket, Praia de Mira</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-2">
+                <div class="about-2-1">
+                    <div class="about-2-1-1">
+                        <div class="about-tab">
+                            <h2 class="pt">COMPETÊNCIAS</h2>
+                            <h2 class="eng">SOFT SKILLS</h2>
+                            <br>
+                            <div class="line">
+                                <div class="line-item">
+                                    <h3 class="pt">Creatividade</h3>
+                                    <h3 class="eng">Creativity</h3>
+                                </div>
+                                <br>
+                                <div class="line-item">
+                                    <h3 class="pt">Empatia</h3>
+                                    <h3 class="eng">Empathy</h3>
+                                </div>
+                                <br>
+                                <div class="line-item">
+                                    <h3 class="pt">Paciência</h3>
+                                    <h3 class="eng">Patience</h3>
+                                </div>
+                                <br>
+                                <div class="line-item">
+                                    <h3 class="pt">Trabalho em Equipa</h3>
+                                    <h3 class="eng">Teamwork</h3>
+                                </div>
+                                <br>
+                                <div class="line-item">
+                                    <h3 class="pt">Organização</h3>
+                                    <h3 class="eng">Organisation</h3>
+                                </div>
+                                <br>
+                                <div class="line-item">
+                                    <h3 class="pt">Adaptabilidade</h3>
+                                    <h3 class="eng">Adaptability</h3>
+                                </div>
+                                <br>
+                                <div class="line-item">
+                                    <h3 class="pt">Aprendo Rapidamente</h3>
+                                    <h3 class="eng">Fast Learner</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-2-1-2">
+                        <div class="about-tab">
+                            <h2 class="pt">LINGUAGENS</h2>
+                            <h2 class="eng">LANGUAGES</h2>
+                            <br>
+                            <div class="line">
+                                <div class="line-item languages">
+                                    <h3 class="pt">Português</h3>
+                                    <h3 class="eng">Portuguese</h3>
+                                    <div class="circles">
+                                        <div class="circle-inner check"></div>
+                                        <div class="circle-inner check"></div>
+                                        <div class="circle-inner check"></div>
+                                        <div class="circle-inner check"></div>
+                                        <div class="circle-inner check"></div>
+                                        <div class="circle-inner check"></div>
+                                        <div class="circle-inner"></div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="line-item languages">
+                                    <h3 class="pt">Inglês</h3>
+                                    <h3 class="eng">English</h3>
+                                    <div class="circles">
+                                        <div class="circle-inner check"></div>
+                                        <div class="circle-inner check"></div>
+                                        <div class="circle-inner check"></div>
+                                        <div class="circle-inner check"></div>
+                                        <div class="circle-inner check"></div>
+                                        <div class="circle-inner"></div>
+                                        <div class="circle-inner"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-2-2">
+                    <div class="about-tab">
+                        <h2 class="pt">Contactos</h2>
+                        <h2 class="eng">Contacts</h2>
+                        <br>
+                        <div class="line">
+                            <div class="line-item">
+                                <h3>LinkedIn</h3>
+                                <p>aritanevesr →</p>
+                            </div>
+                            <br>
+                            <div class="line-item">
+                                <h3>Behance</h3>
+                                <p>aritanevesr →</p>
+                            </div>
+                            <br>
+                            <div class="line-item">
+                                <h3>GitHub</h3>
+                                <p>ARitaNevesR →</p>
+                            </div>
+                            <br>
+                            <div class="line-item">
+                                <h3>Email</h3>
+                                <p>aritanevesr@gmail.com</p>
+                            </div>
+                            <br>
+                            <div class="line-item">
+                                <h3>Phone</h3>
+                                <p>+351 912 591 814</p>
+                            </div>
+                            <br>
+                            <div class="line-item">
+                                <h3>Instagram</h3>
+                                <p>ritanevesr →</p>
+                            </div>
+                            <br>
+                            <div class="line-item">
+                                <h3>Discord</h3>
+                                <p>qiluc →</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Projects-->
+        <div class="projects" id="projects">
+            <div class="projects-tab">
+                <h3 class="pt">PROJECTS</h3>
+                <div class="selector-1">
+                    <button class="selected pt figma" onclick="showSlider('figma')">FIGMA</button>
+                    <button class="not-selected pt web" onclick="showSlider('web')">DESIGN DE WEBSITES</button>
+                    <button class="not-selected pt canvas" onclick="showSlider('canvas')">JOGOS DO CANVAS</button>
+                    <button class="not-selected pt node" onclick="showSlider('node')">NODE & EXPRESS</button>
+                    <button class="not-selected pt old" onclick="showSlider('old')">PROJETOS ANTIGOS</button>
+                    <button class="selected eng figma" onclick="showSlider('figma')">FIGMA</button>
+                    <button class="not-selected eng web" onclick="showSlider('web')">WEB DESIGN</button>
+                    <button class="not-selected eng canvas" onclick="showSlider('canvas')">CANVAS GAMES</button>
+                    <button class="not-selected eng node" onclick="showSlider('node')">NODE & EXPRESS</button>
+                    <button class="not-selected eng old" onclick="showSlider('old')">OLD PROJECTS</button>
+                </div>
+
+                <div class="selector-2">
+                    <select class="sliderSelector" id="sliderSelector" onchange="showSlider(this.value)">
+                        <option value="figma">FIGMA</option>
+                        <option value="web">WEB DESIGN</option>
+                        <option value="canvas">CANVAS GAMES</option>
+                        <option value="node">NODE & EXPRESS</option>
+                        <option value="old">OLD PROJECTS</option>
+                    </select>
+                </div>
+
+
+                <div class="figma-slider slider">
+                    <div class="inner-slider">
+                        <div class="slide">
+                            <img src="/images/figma/canil.png" />
+                            <div class="slide-text">
+                                <br>
+                                <h3 class="pt">Canil Municipal de Coimbra</h3>
+                                <h3 class="eng">Coimbra Animal Shelter</h3>
+                                <br>
+                                <p class="pt">Este website foi desenvolvido como um projecto pessoal, inspirado pela
+                                    minha própria
+                                    experiência ao adoptar os meus cães no Canil de Coimbra. Quis retribuir de alguma
+                                    forma e, por isso, criei uma plataforma acessível, funcional e visualmente
+                                    apelativa.</p>
+                                <p class="pt">As cores predominantes (amarelo e castanho) foram escolhidas por serem as
+                                    mais
+                                    utilizadas nas redes sociais do canil, garantindo assim uma ligação visual
+                                    consistente com a identidade já existente.</p>
+
+                                <p class="eng">This website was developed as a personal project, inspired by my own
+                                    experience
+                                    adopting
+                                    my dogs from Canil de Coimbra. I wanted to give something back, so I created an
+                                    accessible, functional, and visually appealing platform.</p>
+                                <p class="eng">The main colours (yellow and brown) were chosen to match the ones most
+                                    commonly
+                                    used
+                                    on
+                                    the shelter’s social media, ensuring visual consistency with their existing
+                                    identity.
+                                </p>
+                                <br>
+                                <a class="pt"
+                                    href="https://www.figma.com/proto/A0HCLb6omuOht2S96LtbaR/Portf%C3%B3lio-Online?node-id=1-3&t=g7F2HC3zvSQo8RmZ-1">Link
+                                    para o Projeto →</a>
+                                <a class="eng"
+                                    href="https://www.figma.com/proto/A0HCLb6omuOht2S96LtbaR/Portf%C3%B3lio-Online?node-id=1-3&t=g7F2HC3zvSQo8RmZ-1">Project
+                                    Link →</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="/images/figma/LKM.png" />
+                            <div class="slide-text">
+                                <br>
+                                <h3>LKM</h3>
+                                <br>
+                                <p class="pt">Projeto desenvolvido durante o meu estágio curricular, este website foi
+                                    criado para a empresa LKM, com o objetivo de apresentar os seus serviços e produtos
+                                    de forma organizada e acessível.</p>
+                                <p class="pt">A navegação foi pensada em formato de páginas distintas, permitindo ao
+                                    utilizador explorar facilmente as diferentes secções da empresa. O design procurou
+                                    refletir a identidade visual da marca, mantendo uma estética moderna e funcional.
+                                </p>
+
+                                <p class="eng">Developed during my curricular internship, this website was created for
+                                    the
+                                    company
+                                    LKM with the aim of presenting their services and products in an organised and
+                                    accessible manner.</p>
+                                <p class="eng">The navigation was designed with separate pages, allowing users to easily
+                                    explore
+                                    the
+                                    different sections of the company. The design sought to reflect the brand's
+                                    visual
+                                    identity while maintaining a modern and functional aesthetic.
+                                </p>
+                                <br>
+                                <a class="pt"
+                                    href="https://www.figma.com/design/A0HCLb6omuOht2S96LtbaR/Portf%C3%B3lio-Online?node-id=1-4012&m=dev&t=g7F2HC3zvSQo8RmZ-1">Link
+                                    para o Projeto →</a>
+                                <a class="eng"
+                                    href="https://www.figma.com/design/A0HCLb6omuOht2S96LtbaR/Portf%C3%B3lio-Online?node-id=1-4012&m=dev&t=g7F2HC3zvSQo8RmZ-1">Project
+                                    Link →</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="/images/figma/prototype.png" />
+                            <div class="slide-text">
+                                <br>
+                                <h3 class="pt">Prótotipo do meu Portfólio Antigo 1</h3>
+                                <h3 class="eng">Prototype of my Old Portfolio 1</h3>
+                                <br>
+                                <p class="pt">Antes de construir este portefólio, criei um protótipo no Figma para
+                                    planear a
+                                    estrutura, o visual e a navegação. Este projeto foi pensado ao detalhe! O resultado
+                                    final é exatamente o site que estás a ver agora!</p>
+                                <p class="eng">Before building this portfolio, I designed a full prototype in Figma to
+                                    plan out
+                                    the
+                                    structure, layout, and user flow. This project was carefully thought through!
+                                    The
+                                    final result is exactly the website you're viewing right now!
+                                </p>
+                                <br>
+                                <a class="pt"
+                                    href="https://www.figma.com/design/A0HCLb6omuOht2S96LtbaR/Portf%C3%B3lio-Online?node-id=0-1&m=dev&t=g7F2HC3zvSQo8RmZ-1">Link
+                                    para o Projeto →</a>
+                                <a class="eng"
+                                    href="https://www.figma.com/design/A0HCLb6omuOht2S96LtbaR/Portf%C3%B3lio-Online?node-id=0-1&m=dev&t=g7F2HC3zvSQo8RmZ-1">Project
+                                    Link →</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="/images/figma/prototype.png" />
+                            <div class="slide-text">
+                                <br>
+                                <h3 class="pt">Prótotipo do meu Portfólio Antigo 2</h3>
+                                <h3 class="eng">Prototype of my Old Portfolio 2</h3>
+                                <br>
+                                <p class="pt">Antes de construir este portefólio, criei um protótipo no Figma para
+                                    planear a
+                                    estrutura, o visual e a navegação. Este projeto foi pensado ao detalhe! O resultado
+                                    final é exatamente o site que estás a ver agora!</p>
+                                <p class="eng">Before building this portfolio, I designed a full prototype in Figma to
+                                    plan out
+                                    the
+                                    structure, layout, and user flow. This project was carefully thought through!
+                                    The
+                                    final result is exactly the website you're viewing right now!
+                                </p>
+                                <br>
+                                <a class="pt"
+                                    href="https://www.figma.com/proto/A0HCLb6omuOht2S96LtbaR/Portf%C3%B3lio-Online?node-id=84-76&t=g7F2HC3zvSQo8RmZ-1">Link
+                                    para o Projeto →</a>
+                                <a class="eng"
+                                    href="https://www.figma.com/proto/A0HCLb6omuOht2S96LtbaR/Portf%C3%B3lio-Online?node-id=84-76&t=g7F2HC3zvSQo8RmZ-1">Project
+                                    Link →</a>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+
+                <div class="web-slider slider">
+                    <div class="inner-slider">
+                        <div class="slide">
+                            <img src="/images/web/sinceramente.png" />
+                            <div class="slide-text">
+                                <br>
+                                <h3>Sinceramente, BN</h3>
+                                <br>
+                                <p class="pt">Este projeto foi desenvolvido para uma cliente que desejava um espaço
+                                    digital simples
+                                    e acessível onde pudesse partilhar os seus poemas e prosas. A prioridade foi criar
+                                    uma experiência de leitura limpa, sem distrações, permitindo que o texto tivesse o
+                                    protagonismo.</p>
+                                <p class="pt">O website foi construído com uma estrutura minimalista e intuitiva,
+                                    garantindo fácil
+                                    navegação entre as páginas e uma apresentação organizada dos conteúdos. O design
+                                    discreto realça a sensibilidade literária da cliente, oferecendo um ambiente
+                                    acolhedor e elegante para a sua obra.</p>
+                                <p class="eng">This project was developed for a client who wanted a simple and
+                                    accessible
+                                    digital
+                                    space to share her poems and prose. The main priority was to create a clean
+                                    reading
+                                    experience, free from distractions, allowing the text itself to take centre
+                                    stage.
+                                </p>
+                                <p class="eng">The website was built with a minimalist and intuitive structure, ensuring
+                                    easy
+                                    navigation between pages and an organised presentation of the content. Its
+                                    understated design highlights the client’s literary sensitivity, providing a
+                                    welcoming and elegant environment for her work.</p>
+                                <br>
+                                <a class="pt" href="https://sinceramentebn.netlify.app">Link para o Projeto →</a>
+                                <a class="eng" href="https://sinceramentebn.netlify.app">Project Link →</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="/images/web/old-pf.jpg">
+                            <div class="slide-text">
+                                <br>
+                                <h3 class="pt">Portfólio Antigo 1</h3>
+                                <h3 class="eng">Old Portfolio 1</h3>
+                                <br>
+                                <p class="pt">Este portfólio foi desenvolvido numa fase anterior ao atual, com a
+                                    proposta de
+                                    simular um ambiente de desktop, onde o utilizador pudesse navegar por diferentes
+                                    janelas e ícones para descobrir os meus trabalhos e saber mais sobre mim.</p>
+                                <p class="pt">Apesar de criativo, o conceito acabou por ser rapidamente substituído, uma
+                                    vez que se
+                                    revelou visualmente confuso. Percebi que, num portfólio, a clareza e a navegação
+                                    intuitiva são essenciais - e por isso optei por uma abordagem mais simples e direta.
+                                </p>
+                                <p class="eng">This portfolio was developed in an earlier phase and aimed to simulate a
+                                    desktop
+                                    environment, where the user could navigate through different windows and icons
+                                    to
+                                    explore my work and learn more about me.
+                                </p>
+                                <p class="eng">Although creative, the concept was quickly replaced as it proved visually
+                                    confusing.
+                                    I realised that, in a portfolio, clarity and intuitive navigation are
+                                    essential—so I
+                                    opted for a simpler, more straightforward approach.
+                                </p>
+                                <br>
+                                <a class="pt" href="https://aritanevesr-old1.netlify.app">Link para o Projeto →</a>
+                                <a class="eng" href="https://aritanevesr-old1.netlify.app">Project Link →</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="/images/figma/prototype.png">
+                            <div class="slide-text">
+                                <br>
+                                <h3 class="pt">Portfólio Antigo 2</h3>
+                                <h3 class="eng">Old Portfolio 2</h3>
+                                <br>
+                                <p class="pt">Este portfólio foi desenvolvido numa fase anterior ao atual, com a
+                                    proposta de
+                                    simular uma rede social, onde o utilizador pudesse navegar por diferentes
+                                    páginas para descobrir os meus trabalhos e saber mais sobre mim.</p>
+                                <p class="pt">Apesar de criativo, o conceito acabou por ser rapidamente substituído, uma
+                                    vez que se
+                                    revelou visualmente confuso. Percebi que, num portfólio, a clareza e a navegação
+                                    intuitiva são essenciais - e por isso optei por uma abordagem mais simples e direta.
+                                </p>
+                                <p class="eng">This portfolio was developed in an earlier phase and aimed to simulate a
+                                    social media app, where the user could navigate through different pages to
+                                    explore my work and learn more about me.
+                                </p>
+                                <p class="eng">Although creative, the concept was quickly replaced as it proved visually
+                                    confusing.
+                                    I realised that, in a portfolio, clarity and intuitive navigation are
+                                    essential—so I
+                                    opted for a simpler, more straightforward approach.
+                                </p>
+                                <br>
+                                <a class="pt" href="https://aritanevesr-old2.netlify.app">Link para o Projeto →</a>
+                                <a class="eng" href="https://aritanevesr-old2.netlify.app">Project Link →</a>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+
+                <div class="canvas-slider slider">
+                    <div class="inner-slider">
+                        <div class="slide">
+                            <img src="/images/canvas/eggcursion.png" />
+                            <div class="slide-text">
+                                <br>
+                                <h3>EggCursion</h3>
+                                <br>
+                                <p class="pt">EggCursion é um jogo desenvolvido em JavaScript com HTML5 Canvas,
+                                    inspirado na música
+                                    "Lazy" dos X-Press 2. A missão? Guiar a personagem por três salas com design único -
+                                    cada uma com os seus próprios desafios - até alcançar o objetivo final.</p>
+                                <p class="pt"><i>Design das salas por <b>Beatriz Portugal</b></i></p>
+                                <p class="pt"><i>Desenvolvimento do jogo por mim <b>Rita Neves</b></i></p>
+                                <p class="pt">É possível encontrar-se este projeto no meu <a href="">Github</a></p>
+
+                                <p class="eng">EggCursion is a game developed in JavaScript using HTML5 Canvas, inspired
+                                    by the
+                                    song
+                                    "Lazy" by X-Press 2. The mission? Guide the character through three uniquely
+                                    designed rooms - each with its own challenges - to reach the final goal.</p>
+                                <p class="eng"><i>♡ Room designs by <b>Beatriz Portugal</b></i></p>
+                                <p class="eng"><i>♡ Game development by <b>Rita Neves</b></i></p>
+                                <p class="eng">You can find this project on my <a href="">Github</a></p>
+                                <br>
+                                <a class="pt" href="eggcursion.netlify.app">Link para o Jogo →</a>
+                                <a class="eng" href="eggcursion.netlify.app">Game Link →</a>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <img src="/images/canvas/valentines.png" />
+                            <div class="slide-text">
+                                <br>
+                                <h3>Jogo de Dia dos Namorados</h3>
+                                <h3>Valentine’s Day Game</h3>
+                                <br>
+                                <p>Este projeto foi desenvolvido como uma prenda personalizada para o Dia dos Namorados,
+                                    utilizando HTML5 Canvas. O objetivo era criar uma experiência interativa e
+                                    carinhosa, pensada especialmente para o meu parceiro.</p>
+                                <p><b>Os cenários não são da minha autoria.</b></p>
+                                <p>É possível encontrar-se este projeto no meu <a href="">Github</a></p>
+
+                                <p>This project was developed as a personalised gift for Valentine’s Day, using
+                                    HTML5
+                                    Canvas. The goal was to create an interactive and heartfelt experience,
+                                    specially
+                                    designed for my partner.
+                                </p>
+                                <p><b>The backgrounds are not my own creation.</b></p>
+                                <p>You can find this project on my <a href="">Github</a></p>
+                                <br>
+                                <a class="pt" href="valentinesprojectrita.netlify.app">Link para o Jogo →</a>
+                                <a class="eng" href="valentinesprojectrita.netlify.app">Game Link →</a>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+
+                <div class="node-slider slider">
+                    <div class="inner-slider">
+                        <div class="slide">
+                            <img src="/images/node/myforum.png" />
+                            <div class="slide-text">
+                                <br>
+                                <h3>My Forum</h3>
+                                <br>
+                                <p class="pt">Este projeto consiste numa aplicação web em formato de fórum, desenvolvida
+                                    com
+                                    Node.js e Express, com o objetivo de explorar funcionalidades essenciais da web sem
+                                    recorrer a uma base de dados.</p>
+                                <p class="pt">Este foi o meu primeiro projeto com Node.js e Express, por isso serviu
+                                    como uma
+                                    valiosa experiência de aprendizagem.</p>
+
+                                <p class="eng">This project consists of a web application in the form of a forum,
+                                    developed with
+                                    Node.js and Express, aiming to explore essential web functionalities without
+                                    using a
+                                    database.</p>
+                                <p class="eng">This was my first project with Node.js and Express, so it served as a
+                                    valuable
+                                    learning experience.</p>
+                                <br>
+                                <a class="pt" href="https://myforumrita.onrender.com/login">Link para o Projeto →</a>
+                                <a class="eng" href="https://myforumrita.onrender.com/login">Project Link →</a>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+
+                <div class="old-slider slider">
+                    <div class="inner-slider">
+                        <div class="slide">
+                            <img src="/images/old/youtube.png" />
+                            <div class="slide-text">
+                                <br>
+                                <h3>꧁ Bokutoh ꧂</h3>
+                                <br>
+                                <p class="pt">Trabalhei como criadora de conteúdo para o canal Bokutoh6020, onde dei os
+                                    meus
+                                    primeiros passos no mundo da comunicação e da produção de vídeo. Este foi o meu
+                                    primeiro projeto online, iniciado na adolescência, que me permitiu desenvolver
+                                    competências em edição, roteiro e envolvimento digital.</p>
+                                <p class="pt">Na altura, utilizei apenas o meu telemóvel, pois era o meu único aparelho
+                                    eletrónico,
+                                    o que não me impediu de aprender e evoluir. Para além de criar e editar vídeos,
+                                    também explorei estratégias para aumentar o alcance do canal e interagir com a
+                                    comunidade, tornando esta experiência um aprendizado valioso sobre criação de
+                                    conteúdo e o universo digital.</p>
+
+                                <p class="eng">I worked as a content creator for the channel Bokutoh6020, where I took
+                                    my first
+                                    steps into the world of communication and video production. This was my first
+                                    online
+                                    project, started during my teenage years, which allowed me to develop skills in
+                                    editing, scripting, and digital engagement.</p>
+                                <p class="eng">At the time, I used only my mobile phone, as it was my only electronic
+                                    device,
+                                    but
+                                    that didn’t stop me from learning and growing. Besides creating and editing
+                                    videos,
+                                    I also explored strategies to increase the channel’s reach and interact with the
+                                    community, making this a valuable learning experience about content creation and
+                                    the
+                                    digital world.</p>
+                                <br>
+                                <a class="pt" href="https://www.youtube.com/@bokutoh6020">Link para o Canal! →</a>
+                                <a class="eng" href="https://www.youtube.com/@bokutoh6020">Link to the Channel! →</a>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Form-->
+        <div class="form" id="form">
+            <div class="form-tab">
+                <h3 class="pt">CONTACTA-ME AGORA! :D </h3>
+                <h3 class="eng">CONTACT ME RIGHT NOW! :D</h3>
+                <div class="form-inside">
+                    <form class="form-pt" id="form-pt" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="80415ea5-f02d-45af-8918-c1a415441b44">
+                        <p class="form-text">Nome</p>
+                        <input type="text" name="name" class="name" placeholder="A tua identidade secreta..." required>
+                        <br>
+                        <p class="form-text">Email</p>
+                        <input type="email" name="email" class="email" placeholder="Não um falso, por favor!" required>
+                        <br>
+                        <p class="form-text">Mensagem</p>
+                        <textarea name="mensagem" class="mensagem" placeholder="Liberta os teus pensamentos..."
+                            required></textarea>
+                        <br>
+                        <button class="form-button" type="submit">Enviar</button>
+                    </form>
+
+                    <form class="form-eng" id="form-eng" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="80415ea5-f02d-45af-8918-c1a415441b44">
+                        <p class="form-text">Name</p>
+                        <input type="text" name="name" class="name" placeholder="Your secret identity..." required>
+                        <br>
+                        <p class="form-text">Email</p>
+                        <input type="email" name="email" class="email" placeholder="Not a fake one, please!" required>
+                        <br>
+                        <p class="form-text">Message</p>
+                        <textarea name="mensagem" class="mensagem" placeholder="Unleash your thoughts..."
+                            required></textarea>
+                        <br>
+                        <button class="form-button" type="submit">Send</button>
+                    </form>
+                    <script>
+                        function addConfirmation(formId, message) {
+                            document.getElementById(formId).addEventListener("submit", function (e) {
+                                e.preventDefault();
+                                if (confirm(message)) {
+                                    this.submit();
+                                }
+                            });
+                        }
+
+                        addConfirmation("form-pt", "Tens a certeza que queres enviar esta mensagem?");
+                        addConfirmation("form-eng", "Are you sure you want to send this message?");
+                    </script>
+                </div>
+            </div>
+        </div>
+
+        <div class="ending">
+            <p>© 2025 aritanevesr. All rights reserved.</p>
+        </div>
+
+</body>
