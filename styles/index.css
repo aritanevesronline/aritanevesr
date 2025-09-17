@@ -1145,6 +1145,7 @@ textarea {
 
     .projects-tab {
         gap: 0;
+        width: 90%;
     }
 
     .projects .slide {
@@ -1202,9 +1203,11 @@ textarea {
 
     .projects-tab {
         gap: 0;
+        width: 90%;
     }
 
     .form-button {
         width: 50%;
     }
+
 }
