@@ -46,11 +46,11 @@
         </div>
 
         <!--MOBILE MENU-->
-        <div class="mobile-menu">
-            <a href="#about" class="pt">Sobre Mim</a>
-            <a href="#about" class="eng">About Me</a>
-            <a href="#projects" class="pt">Portfolio</a>
-            <a href="#projects" class="eng">Portfolio</a>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#about" class="pt" onclick="navigateTo(event, '#about')">Sobre Mim</a>
+            <a href="#about" class="eng" onclick="navigateTo(event, '#about')">About Me</a>
+            <a href="#projects" class="pt" onclick="navigateTo(event, '#projects')">Portfolio</a>
+            <a href="#projects" class="eng" onclick="navigateTo(event, '#projects')">Portfolio</a>
             <button class="toggle-pt" onclick="turnENG()">PT</button>
             <button class="toggle-eng" onclick="turnPT()">EN</button>
         </div>
@@ -161,54 +161,6 @@
         <!--About-->
         <div class="about" id="about">
             <div class="about-1">
-                <div class="about-1-1">
-                    <div class="about-1-1-1">
-                        <div class="about-tab">
-                            <h2 class="pt">Previous Activities</h2>
-                            <h2 class="eng">Previous Activities</h2>
-                            <br>
-                            <div class="line">
-                                <div class="line-item">
-                                    <h3 class="pt">1-2 Anos</h3>
-                                    <p class="pt">Patinagem Artística</p>
-                                    <h3 class="eng">1-2 Years</h3>
-                                    <p class="eng">Figure Skating</p>
-                                </div>
-                                <br>
-                                <div class="line-item">
-                                    <h3 class="pt">3 Anos</h3>
-                                    <p class="pt">Natação</p>
-                                    <h3 class="eng">3 Years</h3>
-                                    <p class="eng">Swimming</p>
-                                </div>
-                                <br>
-                                <div class="line-item">
-                                    <h3 class="pt">2 Anos</h3>
-                                    <p class="pt">Criadora de Conteúdo para um Canal de Youtube Pessoal</p>
-                                    <h3 class="eng">2 Years</h3>
-                                    <p class="eng">Content Creator for Personal YouTube Channel</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about-1-1-2">
-                        <div class="about-tab">
-                            <h2 class="pt">EDUCAÇÃO</h2>
-                            <h2 class="eng">EDUCATION</h2>
-                            <br>
-                            <div class="line">
-                                <div class="line-item">
-                                    <h3 class="pt">2021-2024</h3>
-                                    <p class="pt">Licenciatura em Comunicação e Design Multimédia, na Escola Superior de
-                                        Educação de Coimbra</p>
-                                    <h3 class="eng">2021-2024</h3>
-                                    <p class="eng">Bachelor’s Degree in Communication and Multimedia Design, at Escola
-                                        Superior de Educação de Coimbra</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="about-1-2">
                     <div class="about-tab">
                         <h2 class="pt">EXPERIÊNCIA DE TRABALHO</h2>
@@ -234,6 +186,53 @@
                                 <p class="pt">Ajudante de Retalho no Supermercado Coviran, Praia de Mira</p>
                                 <h3 class="eng">Summer 2021-2023</h3>
                                 <p class="eng">Retail Assistant at Coviran Supermarket, Praia de Mira</p>
+                            </div>
+                            <br>
+                            <div class="line-item">
+                                <h3>2019-2021</h3>
+                                <p class="pt">Criadora de Conteúdo para um Canal de Youtube Pessoal</p>
+                                <p class="eng">Content Creator for Personal YouTube Channel</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-1-1">
+                    <div class="about-1-1-1">
+                        <div class="about-tab">
+                            <h2 class="pt">Previous Activities</h2>
+                            <h2 class="eng">Previous Activities</h2>
+                            <br>
+                            <div class="line">
+                                <div class="line-item">
+                                    <h3 class="pt">1-2 Anos</h3>
+                                    <p class="pt">Patinagem Artística</p>
+                                    <h3 class="eng">1-2 Years</h3>
+                                    <p class="eng">Figure Skating</p>
+                                </div>
+                                <br>
+                                <div class="line-item">
+                                    <h3 class="pt">3 Anos</h3>
+                                    <p class="pt">Natação</p>
+                                    <h3 class="eng">3 Years</h3>
+                                    <p class="eng">Swimming</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-1-1-2">
+                        <div class="about-tab">
+                            <h2 class="pt">EDUCAÇÃO</h2>
+                            <h2 class="eng">EDUCATION</h2>
+                            <br>
+                            <div class="line">
+                                <div class="line-item">
+                                    <h3 class="pt">2021-2024</h3>
+                                    <p class="pt">Licenciatura em Comunicação e Design Multimédia, na Escola Superior de
+                                        Educação de Coimbra</p>
+                                    <h3 class="eng">2021-2024</h3>
+                                    <p class="eng">Bachelor’s Degree in Communication and Multimedia Design, at Escola
+                                        Superior de Educação de Coimbra</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -428,10 +427,12 @@
                                 </p>
                                 <br>
                                 <a class="pt"
-                                    href="https://www.figma.com/proto/A0HCLb6omuOht2S96LtbaR/Portf%C3%B3lio-Online?node-id=1-3&t=g7F2HC3zvSQo8RmZ-1">Link
+                                    href="https://www.figma.com/proto/A0HCLb6omuOht2S96LtbaR/Portf%C3%B3lio-Online?node-id=1-3&t=g7F2HC3zvSQo8RmZ-1"
+                                    target="_blank">Link
                                     para o Projeto →</a>
                                 <a class="eng"
-                                    href="https://www.figma.com/proto/A0HCLb6omuOht2S96LtbaR/Portf%C3%B3lio-Online?node-id=1-3&t=g7F2HC3zvSQo8RmZ-1">Project
+                                    href="https://www.figma.com/proto/A0HCLb6omuOht2S96LtbaR/Portf%C3%B3lio-Online?node-id=1-3&t=g7F2HC3zvSQo8RmZ-1"
+                                    target="_blank">Project
                                     Link →</a>
                             </div>
                         </div>
@@ -463,10 +464,12 @@
                                 </p>
                                 <br>
                                 <a class="pt"
-                                    href="https://www.figma.com/design/A0HCLb6omuOht2S96LtbaR/Portf%C3%B3lio-Online?node-id=1-4012&m=dev&t=g7F2HC3zvSQo8RmZ-1">Link
+                                    href="https://www.figma.com/design/A0HCLb6omuOht2S96LtbaR/Portf%C3%B3lio-Online?node-id=1-4012&m=dev&t=g7F2HC3zvSQo8RmZ-1"
+                                    target="_blank">Link
                                     para o Projeto →</a>
                                 <a class="eng"
-                                    href="https://www.figma.com/design/A0HCLb6omuOht2S96LtbaR/Portf%C3%B3lio-Online?node-id=1-4012&m=dev&t=g7F2HC3zvSQo8RmZ-1">Project
+                                    href="https://www.figma.com/design/A0HCLb6omuOht2S96LtbaR/Portf%C3%B3lio-Online?node-id=1-4012&m=dev&t=g7F2HC3zvSQo8RmZ-1"
+                                    target="_blank">Project
                                     Link →</a>
                             </div>
                         </div>
@@ -490,19 +493,21 @@
                                 </p>
                                 <br>
                                 <a class="pt"
-                                    href="https://www.figma.com/design/A0HCLb6omuOht2S96LtbaR/Portf%C3%B3lio-Online?node-id=0-1&m=dev&t=g7F2HC3zvSQo8RmZ-1">Link
+                                    href="https://www.figma.com/design/A0HCLb6omuOht2S96LtbaR/Portf%C3%B3lio-Online?node-id=0-1&m=dev&t=g7F2HC3zvSQo8RmZ-1"
+                                    target="_blank">Link
                                     para o Projeto →</a>
                                 <a class="eng"
-                                    href="https://www.figma.com/design/A0HCLb6omuOht2S96LtbaR/Portf%C3%B3lio-Online?node-id=0-1&m=dev&t=g7F2HC3zvSQo8RmZ-1">Project
+                                    href="https://www.figma.com/design/A0HCLb6omuOht2S96LtbaR/Portf%C3%B3lio-Online?node-id=0-1&m=dev&t=g7F2HC3zvSQo8RmZ-1"
+                                    target="_blank">Project
                                     Link →</a>
                             </div>
                         </div>
                         <div class="slide">
-                            <img src="/images/figma/prototype.png" />
+                            <img src="/images/figma/prototype2.png" />
                             <div class="slide-text">
                                 <br>
-                                <h3 class="pt">Prótotipo do meu Portfólio Antigo 2</h3>
-                                <h3 class="eng">Prototype of my Old Portfolio 2</h3>
+                                <h3 class="pt">Prótotipo do meu Portfólio Atual</h3>
+                                <h3 class="eng">Prototype of my Current Portfolio</h3>
                                 <br>
                                 <p class="pt">Antes de construir este portefólio, criei um protótipo no Figma para
                                     planear a
@@ -517,10 +522,12 @@
                                 </p>
                                 <br>
                                 <a class="pt"
-                                    href="https://www.figma.com/proto/A0HCLb6omuOht2S96LtbaR/Portf%C3%B3lio-Online?node-id=84-76&t=g7F2HC3zvSQo8RmZ-1">Link
+                                    href="https://www.figma.com/proto/A0HCLb6omuOht2S96LtbaR/Portf%C3%B3lio-Online?node-id=84-76&t=g7F2HC3zvSQo8RmZ-1"
+                                    target="_blank">Link
                                     para o Projeto →</a>
                                 <a class="eng"
-                                    href="https://www.figma.com/proto/A0HCLb6omuOht2S96LtbaR/Portf%C3%B3lio-Online?node-id=84-76&t=g7F2HC3zvSQo8RmZ-1">Project
+                                    href="https://www.figma.com/proto/A0HCLb6omuOht2S96LtbaR/Portf%C3%B3lio-Online?node-id=84-76&t=g7F2HC3zvSQo8RmZ-1"
+                                    target="_blank">Project
                                     Link →</a>
                             </div>
                         </div>
@@ -560,8 +567,10 @@
                                     understated design highlights the client’s literary sensitivity, providing a
                                     welcoming and elegant environment for her work.</p>
                                 <br>
-                                <a class="pt" href="https://sinceramentebn.netlify.app">Link para o Projeto →</a>
-                                <a class="eng" href="https://sinceramentebn.netlify.app">Project Link →</a>
+                                <a class="pt" href="https://sinceramentebn.netlify.app" target="_blank">Link para o
+                                    Projeto →</a>
+                                <a class="eng" href="https://sinceramentebn.netlify.app" target="_blank">Project Link
+                                    →</a>
                             </div>
                         </div>
                         <div class="slide">
@@ -593,12 +602,14 @@
                                     opted for a simpler, more straightforward approach.
                                 </p>
                                 <br>
-                                <a class="pt" href="https://aritanevesr-old1.netlify.app">Link para o Projeto →</a>
-                                <a class="eng" href="https://aritanevesr-old1.netlify.app">Project Link →</a>
+                                <a class="pt" href="https://aritanevesr-old1.netlify.app" target="_blank">Link para o
+                                    Projeto →</a>
+                                <a class="eng" href="https://aritanevesr-old1.netlify.app" target="_blank">Project Link
+                                    →</a>
                             </div>
                         </div>
                         <div class="slide">
-                            <img src="/images/figma/prototype.png">
+                            <img src="/images/web/prototype.png">
                             <div class="slide-text">
                                 <br>
                                 <h3 class="pt">Portfólio Antigo 2</h3>
@@ -624,8 +635,10 @@
                                     opted for a simpler, more straightforward approach.
                                 </p>
                                 <br>
-                                <a class="pt" href="https://aritanevesr-old2.netlify.app">Link para o Projeto →</a>
-                                <a class="eng" href="https://aritanevesr-old2.netlify.app">Project Link →</a>
+                                <a class="pt" href="https://aritanevesr-old2.netlify.app" target="_blank">Link para o
+                                    Projeto →</a>
+                                <a class="eng" href="https://aritanevesr-old2.netlify.app" target="_blank">Project Link
+                                    →</a>
                             </div>
                         </div>
                         <br>
@@ -657,8 +670,8 @@
                                 <p class="eng"><i>♡ Game development by <b>Rita Neves</b></i></p>
                                 <p class="eng">You can find this project on my <a href="">Github</a></p>
                                 <br>
-                                <a class="pt" href="eggcursion.netlify.app">Link para o Jogo →</a>
-                                <a class="eng" href="eggcursion.netlify.app">Game Link →</a>
+                                <a class="pt" href="eggcursion.netlify.app" target="_blank">Link para o Jogo →</a>
+                                <a class="eng" href="eggcursion.netlify.app" target="_blank">Game Link →</a>
                             </div>
                         </div>
 
@@ -684,8 +697,9 @@
                                 <p><b>The backgrounds are not my own creation.</b></p>
                                 <p>You can find this project on my <a href="">Github</a></p>
                                 <br>
-                                <a class="pt" href="valentinesprojectrita.netlify.app">Link para o Jogo →</a>
-                                <a class="eng" href="valentinesprojectrita.netlify.app">Game Link →</a>
+                                <a class="pt" href="valentinesprojectrita.netlify.app" target="_blank">Link para o Jogo
+                                    →</a>
+                                <a class="eng" href="valentinesprojectrita.netlify.app" target="_blank">Game Link →</a>
                             </div>
                         </div>
                         <br>
@@ -717,8 +731,10 @@
                                     valuable
                                     learning experience.</p>
                                 <br>
-                                <a class="pt" href="https://myforumrita.onrender.com/login">Link para o Projeto →</a>
-                                <a class="eng" href="https://myforumrita.onrender.com/login">Project Link →</a>
+                                <a class="pt" href="https://myforumrita.onrender.com/login" target="_blank">Link para o
+                                    Projeto →</a>
+                                <a class="eng" href="https://myforumrita.onrender.com/login" target="_blank">Project
+                                    Link →</a>
                             </div>
                         </div>
                         <br>
@@ -761,8 +777,10 @@
                                     the
                                     digital world.</p>
                                 <br>
-                                <a class="pt" href="https://www.youtube.com/@bokutoh6020">Link para o Canal! →</a>
-                                <a class="eng" href="https://www.youtube.com/@bokutoh6020">Link to the Channel! →</a>
+                                <a class="pt" href="https://www.youtube.com/@bokutoh6020" target="_blank">Link para o
+                                    Canal! →</a>
+                                <a class="eng" href="https://www.youtube.com/@bokutoh6020" target="_blank">Link to the
+                                    Channel! →</a>
                             </div>
                         </div>
                         <br>
@@ -826,5 +844,11 @@
         <div class="ending">
             <p>© 2025 aritanevesr. All rights reserved.</p>
         </div>
-
+    </div>
+    <script>
+        document.querySelectorAll('.navbar, .navbar-mobile, .banner, .mobile-menu, .skills-tab, .about, .projects, .form, .ending')
+            .forEach(el => {
+                el.classList.add('is-visible');
+            });
+    </script>
 </body>
