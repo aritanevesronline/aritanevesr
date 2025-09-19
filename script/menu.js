@@ -41,3 +41,13 @@ function hideMenu() {
     ending.style.display = 'none';
     Menu.style.display = 'none';
 }
+
+function navigateTo(event, target) {
+    event.preventDefault(); // stop default jump
+
+    hideMenu();
+
+    document.querySelector(target).scrollIntoView({
+        behavior: "smooth"
+    });
+}
