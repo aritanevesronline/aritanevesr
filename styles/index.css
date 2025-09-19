@@ -298,6 +298,7 @@ p {
 .about {
     border-radius: 20px;
     width: 83%;
+    height: auto;
     display: flex;
     flex-direction: row;
     gap: 2rem;
@@ -309,6 +310,7 @@ p {
 .about-1 {
     border-radius: 20px;
     width: 50%;
+    height: auto;
     display: flex;
     gap: 2rem;
     align-items: stretch;
@@ -318,6 +320,7 @@ p {
 .about-2 {
     border-radius: 20px;
     width: 50%;
+    height: auto;
     display: flex;
     gap: 2rem;
     align-items: stretch;
@@ -755,8 +758,6 @@ textarea {
     }
 }
 
-
-
 @media screen and (max-width: 1580px) {
     .load-box {
         gap: 0 6rem;
@@ -844,7 +845,6 @@ textarea {
     }
 }
 
-/* Tablets */
 @media screen and (max-width: 1080px) {
     .navbar {
         display: none;
@@ -1001,6 +1001,11 @@ textarea {
 
     }
 
+    .about {
+        flex-direction: column;
+        width: 86.5%;
+        gap: 2rem;
+    }
 
     .about-1,
     .about-2 {
@@ -1009,10 +1014,23 @@ textarea {
         gap: 2rem;
     }
 
+    .about-1>div,
+    .about-2>div {
+        flex: 1;
+        min-height: 0;
+    }
+
     .about-2-1,
     .about-2-2 {
         flex-direction: row;
         width: 100%;
+    }
+
+    .about-1-1,
+    .about-2-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
     }
 
     .projects {
@@ -1078,7 +1096,6 @@ textarea {
     }
 }
 
-/* Mobile */
 @media screen and (max-width: 768px) {
     .navbar-inside {
         padding: 1rem 1.5rem;
@@ -1138,6 +1155,11 @@ textarea {
         width: 100%;
     }
 
+    .about-1-1,
+    .about-2-1 {
+        display: flex;
+    }
+
     .line-item h3,
     .line-item p {
         font-size: 0.9rem;
@@ -1145,7 +1167,6 @@ textarea {
 
     .projects-tab {
         gap: 0;
-        width: 90%;
     }
 
     .projects .slide {
@@ -1158,7 +1179,6 @@ textarea {
     }
 }
 
-/* Small Mobile */
 @media screen and (max-width: 480px) {
     .text h1 {
         font-size: 2.5rem;
@@ -1209,5 +1229,4 @@ textarea {
     .form-button {
         width: 50%;
     }
-
 }
