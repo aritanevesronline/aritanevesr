@@ -759,6 +759,10 @@ textarea {
 }
 
 @media screen and (max-width: 1580px) {
+    .menu-nav {
+        gap: 8rem;
+    }
+
     .load-box {
         gap: 0 6rem;
     }
@@ -788,6 +792,10 @@ textarea {
 
     h2 {
         font-size: 1.2rem;
+    }
+
+    .menu-nav {
+        gap: 6rem;
     }
 
     .line-item h3 {
@@ -825,6 +833,10 @@ textarea {
     .about-tab {
         width: 80%;
         height: 100%;
+    }
+
+    .menu-nav {
+        gap: 2rem;
     }
 
     .languages {
