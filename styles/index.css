@@ -756,6 +756,12 @@ textarea {
     .not-selected {
         font-size: 1rem;
     }
+
+    .photo {
+        padding: 2rem 0 2rem 10rem;
+        width: 60%;
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 1580px) {
@@ -782,6 +788,11 @@ textarea {
 
     .not-selected {
         font-size: 0.8rem;
+    }
+
+    .photo {
+        padding: 2rem 0 2rem 8rem;
+        width: 70%;
     }
 }
 
@@ -822,6 +833,11 @@ textarea {
 
     .not-selected {
         font-size: 0.8rem;
+    }
+
+    .photo {
+        padding: 2rem 0 2rem 6rem;
+        width: 100%;
     }
 }
 
