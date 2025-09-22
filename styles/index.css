@@ -446,7 +446,14 @@ h2 {
     font-weight: 500;
     font-size: 1rem;
     color: var(--medium-purple);
+}
 
+.line-item a {
+    margin: 1px 0 0;
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--medium-purple);
+    text-decoration: none;
 }
 
 /*LANGUAGES */
@@ -831,9 +838,9 @@ textarea {
         font-size: 0.8rem;
     }
 
-    .line-item p {
+    .line-item p,
+    .line-item a {
         font-size: 0.8rem;
-
     }
 
     .languages {
@@ -1045,7 +1052,8 @@ textarea {
         font-size: 0.8rem;
     }
 
-    .line-item p {
+    .line-item p,
+    .line-item a {
         font-size: 0.8rem;
 
     }
@@ -1214,7 +1222,8 @@ textarea {
     }
 
     .line-item h3,
-    .line-item p {
+    .line-item p,
+    .line-item a {
         font-size: 0.9rem;
     }
 
