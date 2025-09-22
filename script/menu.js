@@ -1,53 +1,42 @@
 function showMenu() {
-    const on = document.querySelector('.on-button');
-    const off = document.querySelector('.off-button');
-    const banner = document.querySelector('.banner')
-    const skills = document.querySelector('.skills-tab')
-    const about = document.querySelector('.about')
-    const projects = document.querySelector('.projects')
-    const form = document.querySelector('.form')
-    const ending = document.querySelector('.ending')
-    const Menu = document.querySelector('.mobile-menu')
+    const menu = document.querySelector('.mobile-menu');
+    const sections = document.querySelectorAll(
+        '.banner, .skills-tab, .about, .projects, .form, .ending'
+    );
 
-    on.style.display = 'none';
-    off.style.display = 'block';
-    banner.style.display = 'none';
-    skills.style.display = 'none';
-    about.style.display = 'none';
-    projects.style.display = 'none';
-    form.style.display = 'none';
-    ending.style.display = 'none';
-    Menu.style.display = 'flex';
+    if (menu) menu.style.display = 'flex';
+    sections.forEach(sec => sec.style.display = 'none');
 }
 
 function hideMenu() {
-    const on = document.querySelector('.on-button');
-    const off = document.querySelector('.off-button');
-    const banner = document.querySelector('.banner')
-    const skills = document.querySelector('.skills-tab')
-    const about = document.querySelector('.about')
-    const projects = document.querySelector('.projects')
-    const form = document.querySelector('.form')
-    const ending = document.querySelector('.ending')
-    const Menu = document.querySelector('.mobile-menu')
+    const menu = document.querySelector('.mobile-menu');
+    const sections = document.querySelectorAll(
+        '.banner, .skills-tab, .about, .projects, .form, .ending'
+    );
+    if (menu) menu.style.display = 'none';
 
-    on.style.display = 'flex';
-    off.style.display = 'none';
-    banner.style.display = 'flex';
-    skills.style.display = 'flex';
-    about.style.display = 'flex';
-    projects.style.display = 'flex';
-    form.style.display = 'flex';
-    ending.style.display = 'none';
-    Menu.style.display = 'none';
+    if (window.innerWidth < 1081) {
+        sections.forEach(sec => sec.style.display = 'flex');
+    }
 }
 
 function navigateTo(event, target) {
-    event.preventDefault(); // stop default jump
-
+    event.preventDefault();
     hideMenu();
-
-    document.querySelector(target).scrollIntoView({
-        behavior: "smooth"
-    });
+    document.querySelector(target)?.scrollIntoView({ behavior: 'smooth' });
 }
+
+function handleResize() {
+    const menu = document.querySelector('.mobile-menu');
+    const sections = document.querySelectorAll(
+        '.banner, .skills-tab, .about, .projects, .form, .ending'
+    );
+
+    if (window.innerWidth >= 1081) {
+        if (menu) menu.style.display = 'none';
+        sections.forEach(sec => sec.style.display = 'flex');
+    }
+}
+
+handleResize();
+window.addEventListener('resize', handleResize);
