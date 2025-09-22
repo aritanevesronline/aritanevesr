@@ -30,8 +30,8 @@
                     <a href="#about" class="eng">About Me</a>
                     <a href="#projects" class="pt">Portfólio</a>
                     <a href="#projects" class="eng">Portfolio</a>
-                    <button class="toggle-pt" onclick="turnENG()">EN</button>
-                    <button class="toggle-eng" onclick="turnPT()">PT</button>
+                    <button class="toggle-pt" onclick="turnENG()">PT</button>
+                    <button class="toggle-eng" onclick="turnPT()">ENG</button>
                 </div>
             </div>
         </div>
@@ -176,7 +176,7 @@
                             <br>
                             <div class="line-item">
                                 <h3 class="pt">2024 (3 meses)</h3>
-                                <p class="pt">Estágiaria de Design na empresa GrupoPIE Portugal, Póvoa de Varzim/p>
+                                <p class="pt">Estágiaria de Design na empresa GrupoPIE Portugal, Póvoa de Varzim</p>
                                 <h3 class="eng">2024 (3 months)</h3>
                                 <p class="eng">Design Intern at GrupoPIE Portugal, Póvoa de Varzim</p>
                             </div>
@@ -371,16 +371,30 @@
             <div class="projects-tab">
                 <h3 class="pt">PROJECTS</h3>
                 <div class="selector-1">
-                    <button class="selected pt figma" onclick="showSlider('figma')">FIGMA</button>
-                    <button class="not-selected pt web" onclick="showSlider('web')">DESIGN DE WEBSITES</button>
-                    <button class="not-selected pt canvas" onclick="showSlider('canvas')">JOGOS DO CANVAS</button>
-                    <button class="not-selected pt node" onclick="showSlider('node')">NODE & EXPRESS</button>
-                    <button class="not-selected pt old" onclick="showSlider('old')">PROJETOS ANTIGOS</button>
-                    <button class="selected eng figma" onclick="showSlider('figma')">FIGMA</button>
-                    <button class="not-selected eng web" onclick="showSlider('web')">WEB DESIGN</button>
-                    <button class="not-selected eng canvas" onclick="showSlider('canvas')">CANVAS GAMES</button>
-                    <button class="not-selected eng node" onclick="showSlider('node')">NODE & EXPRESS</button>
-                    <button class="not-selected eng old" onclick="showSlider('old')">OLD PROJECTS</button>
+                    <div class="selector-1-1">
+                        <button class="selected figma" onclick="showSlider('.selector-1-1', 'figma')">FIGMA</button>
+                        <button class="not-selected web" onclick="showSlider('.selector-1-1', 'web')">DESIGN DE
+                            WEBSITES</button>
+                        <button class="not-selected canvas" onclick="showSlider('.selector-1-1', 'canvas')">JOGOS DO
+                            CANVAS</button>
+                        <button class="not-selected node" onclick="showSlider('.selector-1-1', 'node')">NODE &
+                            EXPRESS</button>
+                        <button class="not-selected old" onclick="showSlider('.selector-1-1', 'old')">PROJETOS
+                            ANTIGOS</button>
+                    </div>
+
+                    <div class="selector-1-2">
+                        <button class="selected figma" onclick="showSlider('.selector-1-2', 'figma')">FIGMA</button>
+                        <button class="not-selected web" onclick="showSlider('.selector-1-2', 'web')">WEB
+                            DESIGN</button>
+                        <button class="not-selected canvas" onclick="showSlider('.selector-1-2', 'canvas')">CANVAS
+                            GAMES</button>
+                        <button class="not-selected node" onclick="showSlider('.selector-1-2', 'node')">NODE &
+                            EXPRESS</button>
+                        <button class="not-selected old" onclick="showSlider('.selector-1-2', 'old')">OLD
+                            PROJECTS</button>
+                    </div>
+
                 </div>
 
                 <div class="selector-2">
@@ -848,4 +862,3 @@
         </div>
     </div>
 </body>
-
