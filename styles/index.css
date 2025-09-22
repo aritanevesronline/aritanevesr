@@ -577,9 +577,14 @@ h2 {
     gap: 2rem;
     overflow-x: auto;
     overflow-y: hidden;
+    cursor: grab;
     padding-bottom: 20px;
     box-sizing: content-box;
     margin-bottom: 1rem;
+}
+
+.inner-slider.active {
+    cursor: grabbing;
 }
 
 .inner-slider::-webkit-scrollbar {
