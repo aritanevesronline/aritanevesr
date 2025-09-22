@@ -17,6 +17,7 @@
     <script src="/script/buttons.js"></script>
     <script src="/script/menu.js"></script>
     <script src="/script/language-toggle.js" defer></script>
+    <script src="/script/slider.js"></script>
 </head>
 
 <body>
@@ -491,8 +492,8 @@
                             <img src="/images/figma/prototype.png" />
                             <div class="slide-text">
                                 <br>
-                                <h3 class="pt">Prótotipo do meu Portfólio Antigo 1</h3>
-                                <h3 class="eng">Prototype of my Old Portfolio 1</h3>
+                                <h3 class="pt">Portfólio Prótotipo Versão 1</h3>
+                                <h3 class="eng">Portfolio Prototype Version 1</h3>
                                 <br>
                                 <p class="pt">Antes de construir este portefólio, criei um protótipo no Figma para
                                     planear a
@@ -517,8 +518,8 @@
                             <img src="/images/figma/prototype2.png" />
                             <div class="slide-text">
                                 <br>
-                                <h3 class="pt">Prótotipo do meu Portfólio Atual</h3>
-                                <h3 class="eng">Prototype of my Current Portfolio</h3>
+                                <h3 class="pt">Portfólio Prótotipo Versão 2</h3>
+                                <h3 class="eng">Portfolio Prototype Version 2</h3>
                                 <br>
                                 <p class="pt">Antes de construir este portefólio, criei um protótipo no Figma para
                                     planear a
@@ -593,8 +594,8 @@
                             <img src="/images/web/old-pf.jpg">
                             <div class="slide-text">
                                 <br>
-                                <h3 class="pt">Portfólio Antigo 1</h3>
-                                <h3 class="eng">Old Portfolio 1</h3>
+                                <h3 class="pt">Portfólio Versão 1</h3>
+                                <h3 class="eng">Portfolio Version 1</h3>
                                 <br>
                                 <p class="pt">Este portfólio foi desenvolvido numa fase anterior ao atual, com a
                                     proposta de
@@ -628,8 +629,8 @@
                             <img src="/images/web/prototype.png">
                             <div class="slide-text">
                                 <br>
-                                <h3 class="pt">Portfólio Antigo 2</h3>
-                                <h3 class="eng">Old Portfolio 2</h3>
+                                <h3 class="pt">Portfólio Versão 2</h3>
+                                <h3 class="eng">Portfolio Version 2</h3>
                                 <br>
                                 <p class="pt">Este portfólio foi desenvolvido numa fase anterior ao atual, com a
                                     proposta de
@@ -802,6 +803,15 @@
                         <br>
                     </div>
                 </div>
+
+                <script>
+                    document.querySelectorAll('.inner-slider').forEach(slider => {
+                        slider.addEventListener('wheel', (evt) => {
+                            evt.preventDefault();
+                            slider.scrollLeft += evt.deltaY;
+                        });
+                    });
+                </script>
             </div>
         </div>
 
