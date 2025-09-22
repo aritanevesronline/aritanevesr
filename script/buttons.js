@@ -6,7 +6,7 @@ function hideAll() {
     document.querySelector('.old-slider').style.display = 'none';
 }
 
-function showSlider(name) {
+function showSlider(containerSelector, name) {
     const sliders = ['figma', 'web', 'canvas', 'node', 'old'];
 
     sliders.forEach(slider => {
@@ -14,8 +14,11 @@ function showSlider(name) {
         if (el) el.style.display = (slider === name) ? 'flex' : 'none';
     });
 
+    const container = document.querySelector(containerSelector);
+    if (!container) return;
+
     sliders.forEach(slider => {
-        const btn = document.querySelector(`.${slider}.selected, .${slider}.not-selected`) || document.querySelector(`.${slider}`);
+        const btn = container.querySelector(`.${slider}`);
         if (btn) {
             if (slider === name) {
                 btn.classList.add('selected');
@@ -27,3 +30,4 @@ function showSlider(name) {
         }
     });
 }
+
