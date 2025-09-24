@@ -936,6 +936,13 @@ textarea {
     .navbar-inside i {
         font-size: 1.5rem;
         font-weight: 800;
+        cursor: pointer;
+    }
+
+    .off-button i {
+        font-size: 1.8rem;
+        font-weight: 800;
+        cursor: pointer;
     }
 
     .logo {
@@ -1296,3 +1303,4 @@ textarea {
         width: 50%;
     }
 }
+
