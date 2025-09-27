@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const walk = (x - startX) * 1.2;
             if (Math.abs(walk) > 2) isDragging = true;
             slider.scrollLeft = scrollLeft - walk;
-            e.preventDefault(); // impede scroll vertical indesejado durante arraste horizontal
+            e.preventDefault();
         }, { passive: false });
 
         slider.addEventListener('touchend', () => {
@@ -66,4 +66,5 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     });
+
 });
