@@ -11,9 +11,9 @@ body {
     --background: #EDF0F5;
     --white: white;
     --text-color: #2B2B2B;
-    --light-purple: #CBBEDE;
-    --medium-purple: #7F7391;
-    --dark-purple: #595067;
+    --light-purple: #dbd8c7;
+    --medium-purple: #afa790;
+    --dark-purple: #7f735d;
 }
 
 p {
@@ -402,7 +402,7 @@ h2 {
     font-size: 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
-    color: #5c4f70;
+    color: var(--dark-purple);
     margin: 2rem 0 0 0;
 }
 
@@ -413,7 +413,7 @@ h2 {
     height: auto;
     margin-left: 20px;
     padding-left: 20px;
-    border-left: 2px solid #9a8bb7;
+    border-left: 2px solid var(--medium-purple);
     margin: 0 0 2rem 0;
 }
 
@@ -430,7 +430,7 @@ h2 {
     top: 0;
     width: 14px;
     height: 14px;
-    background: #9a8bb7;
+    background: var(--medium-purple);
     border-radius: 50%;
 }
 
@@ -1303,4 +1303,5 @@ textarea {
         width: 50%;
     }
 }
+
 
