@@ -17,7 +17,7 @@ function turnPT() {
     const formPT = document.querySelectorAll('.form-pt');
     const formENG = document.querySelectorAll('.form-eng');
 
-    pt.forEach(el => el.style.display = 'block');
+    pt.forEach(el => el.style.display = 'flex');
     eng.forEach(el => el.style.display = 'none');
 
     togglePT.forEach(el => el.style.display = 'flex');
@@ -37,7 +37,7 @@ function turnENG() {
     const formENG = document.querySelectorAll('.form-eng');
 
     pt.forEach(el => el.style.display = 'none');
-    eng.forEach(el => el.style.display = 'block');
+    eng.forEach(el => el.style.display = 'flex');
 
     togglePT.forEach(el => el.style.display = 'none');
     toggleENG.forEach(el => el.style.display = 'flex');
@@ -46,3 +46,4 @@ function turnENG() {
 
     localStorage.setItem('language', 'eng');
 }
+
